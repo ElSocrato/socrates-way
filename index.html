@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Socrates Way</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: #0a0a0f;
+      background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(80, 0, 120, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(120, 0, 80, 0.1) 0%, transparent 50%);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 20px 60px;
+      color: #fff;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6b00b6, #c0006e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin-bottom: 16px;
+      box-shadow: 0 0 30px rgba(150, 0, 200, 0.4);
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+      max-width: 280px;
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    .section-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #555;
+      margin-bottom: 12px;
+      align-self: flex-start;
+      max-width: 480px;
+      width: 100%;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 480px;
+      margin-bottom: 32px;
+    }
+
+    a.btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 15px 20px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    a.btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    a.btn:active { transform: translateY(0); }
+
+    a.btn .icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      background: rgba(255,255,255,0.1);
+    }
+
+    a.btn .label { flex: 1; }
+
+    a.btn .arrow {
+      font-size: 12px;
+      opacity: 0.4;
+    }
+
+    /* Affiliate buttons */
+    .btn-affiliate {
+      background: linear-gradient(135deg, #4a0080, #800040);
+      border: 1px solid rgba(180, 0, 120, 0.3);
+    }
+
+    /* Social buttons */
+    .btn-instagram {
+      background: linear-gradient(135deg, #1a1a2e, #2a1a3e);
+      border: 1px solid rgba(180, 80, 255, 0.2);
+    }
+
+    .btn-tiktok {
+      background: linear-gradient(135deg, #0d0d1a, #1a0d1a);
+      border: 1px solid rgba(100, 220, 255, 0.15);
+    }
+
+    .btn-youtube {
+      background: linear-gradient(135deg, #1a0d0d, #2a0d0d);
+      border: 1px solid rgba(255, 60, 60, 0.2);
+    }
+
+    .btn-facebook {
+      background: linear-gradient(135deg, #0d1a2e, #0d1a40);
+      border: 1px solid rgba(60, 120, 255, 0.2);
+    }
+
+    .btn-amazon {
+      background: linear-gradient(135deg, #1a1200, #2a1e00);
+      border: 1px solid rgba(255, 180, 0, 0.2);
+    }
+
+    .btn-audible {
+      background: linear-gradient(135deg, #001a1a, #002a2a);
+      border: 1px solid rgba(0, 200, 180, 0.2);
+    }
+
+    .badge {
+      font-size: 10px;
+      background: linear-gradient(90deg, #9b00d4, #d4006a);
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .divider {
+      width: 100%;
+      max-width: 480px;
+      height: 1px;
+      background: rgba(255,255,255,0.06);
+      margin-bottom: 24px;
+    }
+
+    footer {
+      font-size: 11px;
+      color: #333;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="avatar">🧠</div>
+  <h1>Socrates Way</h1>
+  <p class="tagline">Dark psychology & manipulation awareness.<br>Exposing tactics used against you daily.</p>
+
+  <!-- AFFILIATE SECTION -->
+  <div class="section-label" style="max-width:480px;width:100%;">Resources</div>
+  <div class="links">
+
+    <a class="btn btn-affiliate" href="https://f1464nsz442-26bkhpseu0kfrs.hop.clickbank.net" target="_blank" rel="noopener">
+      <div class="icon">📖</div>
+      <div class="label">
+        Escape the Toxic Cycle — Full Guide
+        <div style="font-size:11px;font-weight:400;opacity:0.6;margin-top:2px;">Break free from manipulation</div>
+      </div>
+      <span class="badge">FREE TRIAL</span>
+    </a>
+
+    <!-- ADD MORE AFFILIATE LINKS BELOW THIS LINE -->
+
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SOCIALS SECTION -->
+  <div class="section-label" style="max-width:480px;width:100%;">Follow</div>
+  <div class="links">
+
+    <a class="btn btn-instagram" href="https://www.instagram.com/socrates_way" target="_blank" rel="noopener">
+      <div class="icon">📸</div>
+      <div class="label">Instagram</div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="btn btn-tiktok" href="https://www.tiktok.com/@socrates_way" target="_blank" rel="noopener">
+      <div class="icon">🎵</div>
+      <div class="label">TikTok</div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="btn btn-youtube" href="https://www.youtube.com/@SocratesWay" target="_blank" rel="noopener">
+      <div class="icon">▶</div>
+      <div class="label">YouTube</div>
+      <span class="arrow">›</span>
+    </a>
+
+    <a class="btn btn-facebook" href="https://www.facebook.com/share/1JsGENJktf/?mibextid=wwXIfr" target="_blank" rel="noopener">
+      <div class="icon">👤</div>
+      <div class="label">Facebook</div>
+      <span class="arrow">›</span>
+    </a>
+
+  </div>
+
+  <footer>© 2026 Socrates Way</footer>
+
+</body>
+</html>
