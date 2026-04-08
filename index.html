@@ -102,6 +102,14 @@
       font-size: 18px;
       flex-shrink: 0;
       background: rgba(255,255,255,0.1);
+      overflow: hidden;
+    }
+
+    a.btn .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
     }
 
     a.btn .label { flex: 1; }
@@ -148,6 +156,11 @@
       border: 1px solid rgba(0, 200, 180, 0.2);
     }
 
+    .btn-quiz {
+      background: linear-gradient(135deg, #1a0a0a, #2a0e0e);
+      border: 1px solid rgba(192, 57, 43, 0.35);
+    }
+
     .badge {
       font-size: 10px;
       background: linear-gradient(90deg, #9b00d4, #d4006a);
@@ -182,6 +195,15 @@
   <div class="section-label" style="max-width:480px;width:100%;">Resources</div>
   <div class="links">
 
+    <a class="btn btn-quiz" href="https://elsocrato.github.io/redflags-quiz/" target="_blank" rel="noopener">
+      <div class="icon">🧠</div>
+      <div class="label">
+        Are You Being Manipulated? — Free Quiz
+        <div style="font-size:11px;font-weight:400;opacity:0.6;margin-top:2px;">Get your psychological risk score in 2 minutes</div>
+      </div>
+      <span class="badge">FREE</span>
+    </a>
+
     <a class="btn btn-affiliate" href="https://f1464nsz442-26bkhpseu0kfrs.hop.clickbank.net" target="_blank" rel="noopener">
       <div class="icon">📖</div>
       <div class="label">
@@ -202,13 +224,13 @@
   <div class="links">
 
     <a class="btn btn-instagram" href="https://www.instagram.com/socrates_way" target="_blank" rel="noopener">
-      <div class="icon">📸</div>
+      <div class="icon"><img src="instagram.avif" alt="Instagram"></div>
       <div class="label">Instagram</div>
       <span class="arrow">›</span>
     </a>
 
     <a class="btn btn-tiktok" href="https://www.tiktok.com/@socrates_way" target="_blank" rel="noopener">
-      <div class="icon">🎵</div>
+      <div class="icon"><img src="icone-tik-tok-glitch-medias-sociaux-icone-tik-tok-vinnitsa-ukraine-fevrier-22-02-2023_250246-536.avif" alt="TikTok"></div>
       <div class="label">TikTok</div>
       <span class="arrow">›</span>
     </a>
